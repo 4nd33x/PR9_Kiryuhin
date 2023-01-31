@@ -1,0 +1,13 @@
+---
+- name: playbook-2
+  hosts: all
+  become: yes
+
+  tasks:
+
+   - name: Update
+     apt:
+       update_cache: yes
+   - name: upgrade
+     apt:
+       upgrade: yes

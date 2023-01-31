@@ -1,0 +1,16 @@
+---
+- name: playbook-4
+  hosts: all
+  become: yes
+
+  tasks:
+
+   - name: create directory project
+     file:
+      path: /Project5
+      state: directory
+
+   - name: crete directory Ansible
+     file:
+      path: /Ansible5
+      state: directory
